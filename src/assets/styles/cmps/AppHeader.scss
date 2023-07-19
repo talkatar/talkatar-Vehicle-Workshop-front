@@ -1,0 +1,46 @@
+header {
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(to bottom, $clr10, $clr11);
+    align-content: center;
+
+    .logo {
+        margin-block-start: rem(15px);
+        padding-inline-start: rem(20px);
+
+        span {
+            color: $clr6;
+            font-size: rem(30px);
+        }
+    }
+
+    nav {
+        gap: rem(57px);
+        padding: 0 rem(25px);
+        color: $clr6;
+        font-size: rem(20px);
+        line-height: 1em;
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+@include for-mobile-layout {
+    header {
+
+        .logo {
+            margin-inline-end: rem(20px);
+        }
+
+        nav {
+            gap: rem(20px);
+        }
+
+        a {
+            min-width: rem(95px);
+            font-size: rem(15px);
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.vehicle-preview {
+    background: $clr14;
+    box-shadow: 0 0 11px $clr15;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .info {
+        padding: rem(10px);
+    }
+
+    div {
+        text-align: center;
+    }
+
+    .img-container {
+        text-align: center;
+        width: 100%;
+        margin-block-end: rem(20px);
+
+        img {
+            margin-block-start: rem(20px);
+            border-radius: 10%;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        padding-block-start: 0.33em;
+        padding-block-end: 0.33em;
+        margin-block-start: 0.83em;
+        font-size: 1.5rem;
+    }
+
+    div span {
+        font-weight: 550;
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: rem(10px);
+        transform: translateY(130%);
+        transition: transform 0.2s;
+        background-image: linear-gradient(to bottom, $clr16, $clr17);
+
+        .delete-btn,
+        .edit-btn {
+            background-color: $clr18;
+            color: $clr6;
+        }
+    }
+
+    &:hover .actions {
+        transform: translateY(0%);
+    }
+
+    .el-button:hover {
+        a {
+            color: $clr19;
+        }
+    }
+}

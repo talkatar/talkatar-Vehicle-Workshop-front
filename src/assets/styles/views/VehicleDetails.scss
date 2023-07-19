@@ -1,0 +1,50 @@
+.vehicle-details {
+    text-align: center;
+    margin-block-start: rem(20px);
+
+    h2 {
+        font-size: 3rem;
+        color: $clr12;
+        padding-bottom: rem(5px);
+    }
+
+    img {
+        border-radius: 10%;
+        margin-block-start: rem(30px);
+        margin-block-end: rem(20px);
+    }
+
+    .detail {
+        font-size: 1.3rem;
+        color: $clr12;
+
+        div span {
+            font-weight: 550;
+        }
+    }
+
+    .btn-back {
+        margin-block-start: rem(16px);
+        margin-inline-start: rem(32px);
+    }
+
+    .control-interface {
+        transform: translateX(-50%);
+        margin-inline-start: 50vw;
+        max-width: rem(420px);
+    }
+}
+@include for-mobile-layout {
+    .vehicle-details {
+
+    h2 {
+        font-size: 2rem;
+    }
+    div{
+        font-size: rem(18px);
+    }
+    img{
+        height: rem(300px);
+    }
+}
+}

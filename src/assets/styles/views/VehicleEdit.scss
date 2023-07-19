@@ -1,0 +1,88 @@
+.vehicle-edit {
+    text-align: center;
+
+    .title {
+        margin-block-start: 0.93em;
+        font-size: 2rem;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .form-container {
+
+            .el-input__wrapper {
+                margin-block-end: rem(10px);
+            }
+
+            input {
+                text-align: center;
+            }
+        }
+    }
+
+    .img-container {
+        transform: translateX(-50%);
+        margin-inline-start: 50vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        max-width: rem(700px);
+        gap: rem(60px);
+        text-align: center;
+
+        img {
+            background: $clr13;
+            width: 100%;
+            height: 100%;
+            border-radius: 20%;
+        }
+    }
+
+    .car-ready,
+    .eyal-song,
+    .working {
+        margin-block-start: 0.55em;
+        margin-block-end: 1.11em;
+        font-size: 1.8rem;
+        font-family: caveat;
+    }
+
+    .spinner {
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+        color: $clr11
+    }
+
+    .container-back-btn {
+        text-align: center;
+
+        .back-btn {
+            margin-block-end: 1rem;
+            width: rem(73px);
+            height: rem(32px);
+        }
+    }
+}
+
+@include for-mobile-layout {
+    .vehicle-edit {
+        .img-container {
+            .first-img {
+                display: none
+            }
+        }
+
+        .car-ready,
+        .eyal-song,
+        .working {
+            padding-inline-start: 0.78em;
+            padding-inline-end: 0.78em;
+            margin-block-end: 0.39em;
+            font-size: 1.6rem;
+            font-family: caveat;
+        }
+    }
+}

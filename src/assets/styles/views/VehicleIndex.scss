@@ -1,0 +1,57 @@
+.home {
+
+    .form-filter-section {
+        margin-block-start: rem(30px);
+        display: flex;
+        gap: rem(50px);
+        justify-content: center;
+
+        h1 {
+            margin-block-start: 0rem;
+            text-align: center;
+        }
+    }
+
+    .no-vehicles {
+        margin-block-start: 0.77em;
+        font-size: rem(26px);
+        text-align: center;
+    }
+
+    .no-vehicles-img {
+        margin-inline-start: 50vw;
+        transform: translateX(-50%);
+        height: rem(373px);
+    }
+
+ 
+}
+
+@include for-mobile-layout {
+    .home {
+
+        .form-filter-section {
+            flex-direction: column;
+            gap: rem(26px);
+
+        }
+      
+        .insert-vehicle,.garage-details-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        .filter {
+            align-items: center
+        }
+
+        .el-input__inner {
+            text-align: center;
+        }
+        .no-vehicles-img {
+            height: rem(270px);
+        }
+    }
+  
+}

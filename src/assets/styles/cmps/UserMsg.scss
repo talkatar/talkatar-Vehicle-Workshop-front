@@ -1,0 +1,42 @@
+.alert {
+
+  position: fixed;
+  top: 15vh;
+  left: -200vw;
+  right: 30vw;
+  width: 50vw;
+  z-index: 9999;
+  border-radius: em(4px, 14px);
+  background-color: $clr25;
+  box-shadow: 0px 0px 20px 20px $clr26;
+  height: rem(77px);
+  border-top: 1px solid $clr27;
+  line-height: 20px;
+  transition: 0.8s;
+
+  & .color-left {
+    width: 10px;
+    border-radius: em(4px, 14px) 0 0 em(4px, 14px);
+    color: $clr28;
+    fill: $clr29;
+    background-color: $clr29;
+  }
+}
+
+.active {
+  left: 0;
+}
+
+.alert-content {
+  p {
+    top: 50%;
+    padding-inline-start: 10px;
+    margin: 0px;
+  }
+}
+
+@include for-mobile-layout {
+  .alert {
+    width: 70vw;
+  }
+}

@@ -1,0 +1,36 @@
+.vehicle-list {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: rem(10px);
+        border-radius: rem(37px);
+        padding: rem(30px);
+        list-style-type: none;
+        text-align: center;
+        margin-block-start: rem(10px);
+        margin-block-end: rem(10px);
+
+    }
+}
+
+@include for-mobile-layout {
+    .vehicle-list {
+        ul {
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            padding: 0px 15px 0px 15px;
+        }
+    }
+
+    .vehicle-preview {
+        .actions {
+            .el-button {
+                padding-inline-end: rem(8px);
+                padding-inline-start:rem(8px);
+            }
+        }
+
+        .img-container img {
+            height: rem(300px);
+        }
+    }
+}

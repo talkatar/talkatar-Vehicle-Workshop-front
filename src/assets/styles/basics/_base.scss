@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: montserrat;
+    line-height: 1.6;
+    color: $clr2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-size: rem(18px);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: caveat;
+    margin: 0 0 0.6em;
+    line-height: 1;
+}
+
+p {
+    margin: 0 0 1em;
+    max-width: 40ch;
+}
+ul {
+    list-style-type: none;
+  }
+a {
+    text-decoration: none;
+    color: #606266;
+
+&:hover {
+cursor: pointer;
+color: #409eff;
+
+;}}
+

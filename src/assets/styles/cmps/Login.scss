@@ -1,0 +1,114 @@
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background-color: transparent;
+
+  & .login-modal {
+    box-shadow: 0vw 0vh 0px 100vw $clr22;
+    position: fixed;
+    z-index: 22;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: $clr6;
+    border-radius: 0.5rem;
+    max-height: 90vh;
+    width: rem(400px);
+    max-width: rem(600px);
+    box-shadow: 100% 100% $clr23;
+
+    & form {
+      padding-inline-start: rem(8px);
+      padding-inline-end: rem(8px);
+
+      & h1 {
+        font-size: 1.625rem;
+        margin-block-start: 1.15em;
+        margin-block-end: 1.15em;
+        width: 100%;
+        color: $clr24;
+      }
+
+      .img-sign-uploader {
+        width: rem(150px);
+        height: rem(150px);
+        position: relative;
+        border-radius: 12em;
+        overflow: hidden;
+        cursor: pointer;
+        margin-block-end: rem(30px);
+
+        .img-container {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .upload-file {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          z-index: 3;
+          cursor: pointer;
+          opacity: 0;
+        }
+      }
+
+      & input {
+        font-size: 1.25rem;
+        height: 2.1em;
+        padding-inline-start: 0.5em;
+        margin-block-start: rem(0px);
+        margin-block-end: rem(20px);
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      & .btn-signup-form,
+      .btn-login-form {
+        margin-block-start: rem(10px);
+        font: 1.125rem Arial;
+        width: 100%;
+        height: 2.1em;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        border-radius: 4px;
+        background-image: linear-gradient(to bottom, $clr10, $clr11);
+        margin-block-end: rem(30px);
+        color: $clr6;
+        cursor: pointer;
+
+      }
+
+      & span {
+        font-family: Macan-regular;
+        margin-block-start: 0.75rem;
+        width: 100%;
+        margin-block-end: rem(8px);
+      }
+
+      & .signup-link {
+        cursor: pointer;
+        margin-block-start: 0rem;
+        color: $clr21;
+      }
+    }
+  }
+}
+
+@include for-mobile-layout {
+ .backdrop .login-modal{
+    width: 21rem;
+  }
+}
